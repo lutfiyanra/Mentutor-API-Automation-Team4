@@ -1,12 +1,6 @@
 <div align="center">
   <h1>Welcome to Mentutor</h1>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
-
 <!-- PROJECT LOGO -->
 
 <img src="mentutor.jpg" alt="Logo" width="450" height="auto" />
