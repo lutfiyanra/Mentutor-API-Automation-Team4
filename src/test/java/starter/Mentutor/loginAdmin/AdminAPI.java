@@ -138,4 +138,9 @@ public class AdminAPI {
         SerenityRest.given().headers("Authorization",BEARER_ADMIN)
                 .pathParam("id_class",id_class);
     }
+<<<<<<< HEAD
 }
+=======
+// no code here
+}
+>>>>>>> master
