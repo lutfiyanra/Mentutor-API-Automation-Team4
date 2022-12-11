@@ -27,5 +27,5 @@ public class UpdateUser {
         SerenityRest
                 .then().statusCode(created);
     }
-
+// no code here
 }

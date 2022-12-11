@@ -36,3 +36,4 @@ public class GetAllUsers {
         SerenityRest.then().statusCode(badRequest);
     }
 }
+// no code here

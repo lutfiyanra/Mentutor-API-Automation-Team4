@@ -84,5 +84,6 @@ public class LoginAdminStepDefs {
         File json = new File(AdminAPI.JSON_SCHEMA+"/PostLoginJsonSchema.json");
         SerenityRest.then().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
+    // no code here
 
 }
