@@ -1,13 +1,16 @@
 package starter.Mentutor.loginMentor;
 
+
 import com.gargoylesoftware.htmlunit.attachment.Attachment;
 import io.restassured.http.ContentType;
+
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 
 import java.io.File;
 
 public class MentorAPI {
+
     public static final String URL = "https://ecommerce-alta.online";
     public static final String DIR = System.getProperty("user.dir");
     public static final String JSON_REQ_BODY = DIR + "/src/test/resources/JSON/RequestBody";
@@ -59,10 +62,27 @@ public class MentorAPI {
     }
 
     // Rimasya
+
+    public static final String URL = "https://ecommerce-alta.online";
+    public static final String DIR = System.getProperty("user.dir");
+    public static final String JSON_REQ_BODY = DIR + "/src/test/resources/JSON/RequestBody";
+    public static final String JSON_SCHEMA = DIR + "/src/test/resources/JSON/JsonSchema";
+    public static final String BEARER_MENTOR = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZENsYXNzIjozOCwiYXV0aG9yaXplZCI6dHJ1ZSwiZXhwIjoxNjcwMjQxNzkxLCJyb2xlIjoibWVudG9yIiwidXNlcklkIjoxMDMzfQ.PIQMZ6kryM5irCkXyDQ8ilycpMQbLFhebbNBhj0Iwtw";
+    public static String LOGIN = URL + "/login";
+    public static String MENTOR_UPDATE_USER = URL + "/users";
+    public static String MENTOR_UPDATE_USER_INVALID = URL + "/userssq";
+    public static String MANAGE_TASK = URL + "/mentors/tasks";
+    public static String MANAGE_TASK_INVALID = URL + "/mentors/taskssz";
+    public static String MANAGE_SPECIFIC_TASK_ID = URL + "/mentors/task/{id_task}";
+    public static String MENTOR_MANAGE_TASK_SCORE = URL + "/mentors/submission/{id_submission}";
+    public static String MENTOR_ADD_COMMENT = URL + "/forum/{id_status}";
+    public static String ATTACHMENT = DIR + "/src/test/resources/Attachment";
+
     @Step("Get mentor tasks authorization")
     public void getMentorTasksWithAuthorization() {
         SerenityRest.given().headers("Authorization", BEARER_MENTOR);
     }
+
 
     @Step("Get task detail without token")
     public void getTaskDetailWithoutToken(int id_task){
@@ -115,5 +135,4 @@ public class MentorAPI {
         SerenityRest.given().headers("Authorization", BEARER_MENTOR)
                 .pathParam("id_task", id_task);
     }
-
 }

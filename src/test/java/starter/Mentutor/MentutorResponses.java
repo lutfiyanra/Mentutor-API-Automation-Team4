@@ -1,4 +1,4 @@
-package starter.Mentutor;
+package starter.Mentutor.loginAdmin;
 
 public class MentutorResponses {
     public static String ID_USER = "id_user";
