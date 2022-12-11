@@ -1,8 +1,20 @@
 @Tugas
 Feature: Admin Update User
 
-  @AdminUpdateUser @Positive
-  Scenario: Update user with valid data and authorization
-    Given Update user with valid data and authenticated to id user 62
-    When Send update request
-    Then Status code should be 201 Created
+  @PutUser @positive
+  Scenario: Update user with valid id_user
+    Given Update user with valid id_user 2
+    When Send update user request
+    And Status code should be 201 Created
+
+  @PutUser @Negetive
+  Scenario: Update user with invalid id_user
+    Given Update user with invalid id_user 7
+    When Send update user request
+    Then Status code update user should be 404 Not Found
+
+  @PutUser @Negative
+  Scenario: Update user with without body
+    Given Update user with invalid id_user 2 without body
+    When Send update user request
+    Then Status code update user without body should be 400 Bad Request
