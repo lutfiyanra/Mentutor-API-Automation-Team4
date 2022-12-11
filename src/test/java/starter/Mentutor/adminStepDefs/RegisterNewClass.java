@@ -51,4 +51,5 @@ public class RegisterNewClass {
         adminAPI.createNewClassEmptyInput(json);
     }
 
+    // no code here
 }

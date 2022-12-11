@@ -145,14 +145,5 @@ public class RegisterNewUser {
         adminAPI.registerNewUserWithSpecialCharInRole(json);
     }
 
-
-//    @When("Send update request")
-//    public void sendUpdateRequest() {
-//        SerenityRest.when().put(AdminAPI.ADMIN_MANAGE_USERS);
-//    }
-//
-//    @Then("Status code should be {int} Created")
-//    public void statusCodeShouldBeCreated(int created) {
-//        SerenityRest.then().statusCode(created);
-//    }
+// no code here
 }

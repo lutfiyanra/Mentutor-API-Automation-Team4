@@ -24,3 +24,4 @@ public class GetAllClasses {
         adminAPI.getAllClassessWithoutAuthorization();
     }
 }
+// no code here
