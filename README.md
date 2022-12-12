@@ -83,7 +83,6 @@ To get a local copy up and running follow these simple example steps.
 
 ### Input Field Validation
 - DataType validation
-- CharCount validation
 - FileType validation
 
 ## 📱 Our teams
